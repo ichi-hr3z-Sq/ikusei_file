@@ -1,0 +1,55 @@
+/*Project-Billd*/
+body{
+    width: 1005px;
+}
+
+.ayataka{
+    float:none;
+    font-size: 22px;
+    font-weight:bold;
+    margin:15px 0px;
+    border-bottom:solid;
+    border-width: 2px;
+}
+
+/*select-type*/
+.select-type{
+    height: 360px;
+    background-color: #faf0e6;
+    padding: 20px 40px;
+}
+
+/*select-skill*/
+.select-skill{
+    height: 240px;
+    background-color: #e0ffff;
+    padding: 20px 40px;
+}
+
+.skill-list{
+    margin-right: 20px;
+    float:left;
+}
+
+/*up-result*/
+.up-result{
+    height:auto;
+    background-color: beige;
+    padding: 20px 40px;
+}
+
+.result{
+    margin-bottom: 10px;
+}
+
+.skilln{
+    margin-right: 20px;
+    float:left;
+}
+
+/*footer*/
+.footer{
+    height: auto;
+    background-color: #e6e6fa;
+    padding: 20px 40px;
+}

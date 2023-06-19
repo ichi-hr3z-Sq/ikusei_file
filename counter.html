@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- HTMLのver定義 -->
+
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <title>育成計画</title>
+    <link rel="stylesheet" href="https://dl.dropbox.com/s/ymr5qc11gas3a9d/looks.css">
+  </head>
+
+  <body>
+    <div class="select-type">
+        <div class="ayataka">キャラのタイプ選択</div>
+        <select id="character-type">
+            <option value="" selected>--</option>
+            <option value="スポーツ">スポーツ</option>
+            <option value="インテリ">インテリ</option>
+            <option value="バラエティ">バラエティ</option>
+        </select>
+        <div>結果：<a id="result"></a></div> <!-- jsの結果を表示 -->
+        <img src="" id="typepic">
+    </div> <!--select-type end-->
+
+    <div class="select-skill">
+        <div class="ayataka">取得スキル</div>
+        <div class="skill-list">
+            <select id="slist1" size="8">
+                <option value="0" selected>--</option>
+                <option value="1">正拳突き</option>
+                <option value="2">五月雨拳</option>
+                <option value="1">諸刃刺し</option>
+                <option value="3">暗殺</option>
+                <option value="4">隼蹴り</option>
+                <option value="2">無人斬り</option>
+                <option value="4">疾風拳</option>
+                <option value="4">熱意溜め</option>
+                <option value="4">身代わり</option>
+                <option value="1">超防御</option>
+            </select>
+        </div>
+
+        <div class="skill-list">
+            <select id="slist2" size="8">
+                <option value="0" selected>--</option>
+                <option value="5">単体魔法</option>
+                <option value="6">全体魔法</option>
+                <option value="7">状態打消</option>
+                <option value="8">集中吸収</option>
+                <option value="9">強制猛毒</option>
+                <option value="7">強制目潰</option>
+                <option value="9">強制混乱</option>
+                <option value="7">強制怨呪</option>
+                <option value="9">強制睡眠</option>
+            </select>
+        </div>
+
+        <div class="skill-list">
+            <select id="slist3" size="8">
+                <option value="0" selected>--</option>
+                <option value="10">発言治療</option>
+                <option value="11">闘魂中入</option>
+                <option value="10">異常治療</option>
+                <option value="12">強制興奮</option>
+                <option value="13">属性防壁</option>
+                <option value="11">腕力増々</option>
+                <option value="11">体力増々</option>
+                <option value="12">賢脳増々</option>
+                <option value="10">速早増々</option>
+                <option value="12">忍耐増々</option>
+                <option value="10">幸運増々</option>
+                <option value="10">存在霧中</option>
+            </select>
+        </div>
+
+        <div class="skill-list">
+            <select id="slist4" size="8">
+                <option value="0" selected>--</option>
+                <option value="14">攻撃威力アップ</option>
+                <option value="14">クリティカル威力</option>
+                <option value="15">スキル攻撃威力</option>
+                <option value="16">属性威力</option>
+                <option value="1">威勢アップ</option>
+                <option value="17">防御アップ</option>
+                <option value="18">異常耐性アップ</option>
+                <option value="3">覚醒アップ</option>
+                <option value="10">ドロップ率アップ</option>
+                <option value="10">G入手アップ</option>
+            </select>
+        </div>
+    </div> <!--select-skill end-->
+
+    <div class="up-result">
+        <div class="ayataka">選んだスキル</div>
+        <div class="result">
+            <div class="skilln"> <!--取得スキルの羅列-->
+                <div>スキル１：<a id="skill1"></a></div> 
+                <div>スキル２：<a id="skill2"></a></div>
+                <div>スキル３：<a id="skill3"></a></div>
+                <div>スキル４：<a id="skill4"></a></div>
+                <div>スキル５：<a id="skill5"></a></div>
+            </div>
+            <div class="swriter">
+                <div>必要なカケラ：<a id="swriter1"></a></div>
+                <div>必要なカケラ：<a id="swriter2"></a></div>
+                <div>必要なカケラ：<a id="swriter3"></a></div>
+                <div>必要なカケラ：<a id="swriter4"></a></div>
+                <div>必要なカケラ：<a id="swriter5"></a></div>
+            </div>
+        </div>
+        <div class="ayataka">必要なカケラ</div>
+        <div>合計数：<a id="itemR"></a><a id="itemG"></a><a id="itemB"></a></div>
+    </div> <!--up-result end-->
+
+    <div class="footer">
+        <div class="ayataka">今後の編集について</div>
+        <div>選択したキャラタイプ内から、1人選ぶ</div>
+        <div>＞選んだキャラに応じて発生するイベントと選択肢に対応する獲得かけらを表示する</div>
+    </div> <!--footer end-->
+
+    <script src="https://dl.dropbox.com/s/7noowe5vr1t403u/math.js"></script> <!--road JS-->
+  </body>
+</html>
